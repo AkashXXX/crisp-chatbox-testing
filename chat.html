@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Session</title>
+  <script type="text/javascript">
+    window.CRISP_RUNTIME_CONFIG = {
+      lock_maximized: true,
+      lock_full_view: true,
+      cross_origin_cookies: true
+    };
+    $crisp = [];
+    CRISP_TOKEN_ID = '123456';
+    CRISP_WEBSITE_ID = '89f46bc9-20d7-4d14-8b49-6b9c247cca0e';
+    (function() {
+      d = document;
+      s = d.createElement('script');
+      s.src = 'https://client.crisp.chat/l.js';
+      s.async = 1;
+      d.getElementsByTagName('head')[0].appendChild(s);
+    })();
+  </script>
+  <script type="text/javascript">
+   setTimeout(function() {
+    $crisp.push(["do", "chat:close"]);
+   }, 300000); // Closes chat after 5 minutes (300,000 ms)
+  </script>
+
+</head>
+<body>
+</body>
+</html>
